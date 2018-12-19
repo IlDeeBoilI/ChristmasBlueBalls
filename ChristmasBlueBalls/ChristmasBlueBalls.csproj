@@ -88,19 +88,140 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\CMS\css\main.css" />
+    <Content Include="Areas\CMS\js\app.js" />
+    <Content Include="Areas\CMS\js\jquery-3.3.1.js" />
+    <Content Include="Areas\CMS\js\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\license.txt" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\help\img\logo.png" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\help\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\toc\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\content.mobile.min.css" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\skin.mobile.min.css" />
+    <Content Include="Areas\CMS\js\tinymce\themes\inlite\theme.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\themes\mobile\theme.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Areas\CMS\js\tinymce\tinymce.min.js" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\fontawesome.min.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\main.css" />
+    <Content Include="css\normalize.css" />
     <Content Include="Global.asax" />
+    <Content Include="images\BlueBalls.png" />
+    <Content Include="images\Products\20181219124324.jpg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\jquery-3.3.1.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\CMS\CMSAreaRegistration.cs" />
+    <Compile Include="Areas\CMS\Controllers\HomeController.cs" />
+    <Compile Include="Areas\CMS\Controllers\ProductController.cs" />
+    <Compile Include="Areas\CMS\Controllers\UsersController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\FileLogger.cs" />
+    <Compile Include="Helpers\FileTools.cs" />
+    <Compile Include="Helpers\ImageTools.cs" />
+    <Compile Include="Helpers\SecureCrypt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Areas\CMS\Views\web.config" />
+    <Content Include="Areas\CMS\Views\Shared\_CMSLayout.cshtml" />
+    <Content Include="Areas\CMS\Views\Home\Index.cshtml" />
+    <Content Include="Areas\CMS\Views\Users\GetUsers.cshtml" />
+    <Content Include="Areas\CMS\Views\Users\GetUser.cshtml" />
+    <Content Include="Areas\CMS\Views\Product\CreateProduct.cshtml" />
+    <Content Include="Areas\CMS\js\tinymce\langs\readme.md" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce-mobile.woff" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="Areas\CMS\js\tinymce\skins\lightgray\fonts\tinymce.woff" />
     <None Include="packages.config" />
+    <Content Include="Areas\CMS\Views\Users\AddUser.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Shared\_MainLayout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Shared\_TypeList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -110,8 +231,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Areas\CMS\Models\" />
+    <Folder Include="images\Placeholders\" />
+    <Folder Include="images\Users\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repo\Repo.csproj">
+      <Project>{3bcab644-0d76-4416-8f4c-b89ad04951bc}</Project>
+      <Name>Repo</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,64 @@
+﻿@using Repo.Models;
+@model List<UsersRoles>
+@{
+    ViewBag.Title = "GetUsers";
+    Layout = "~/Areas/CMS/Views/Shared/_CMSLayout.cshtml";
+}
+
+
+
+<div class="row">
+
+    <div class="col-md-12">
+        <table class="col-md-12">
+            <tr>
+                <th>
+                    Username
+                </th>
+
+                <th>
+                    Name
+                </th>
+
+                <th>
+                    Email
+                </th>
+
+                <th>
+                    Role
+                </th>
+
+            </tr>
+
+            @foreach(UsersRoles i in Model)
+            {
+            <tr>
+                <td>
+                    <a href="/CMS/Users/GetUser/@i.ID">
+                        @i.Username
+                    </a>
+                </td>
+
+                <td>
+                    <a href="/CMS/Users/GetUser/@i.ID">
+                        @i.Firstname @i.Lastname
+                    </a>
+                </td>
+
+                <td>
+                    <a href="/CMS/Users/GetUser/@i.ID">
+                        @i.Email
+                    </a>
+                </td>
+
+                <td>
+                    <a href="/CMS/Users/GetUser/@i.ID">
+                        @i.RoleName
+                    </a>
+                </td>
+            </tr>
+            }
+        </table>
+    </div>
+
+</div>

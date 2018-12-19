@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Create New Product";
+    Layout = "~/Areas/CMS/Views/Shared/_CMSLayout.cshtml";
+}
+
+
+
+<div class="row">
+    
+    <article class="col-md-12">
+        <form action="/CMS/Product/CreateProduct" method="post" enctype="multipart/form-data" class="col-md-10 offset-md-1">
+
+            <div class="form-group">
+                <label for="name" class="col-md-12">Product name</label>
+                <input type="text" name="Name" placeholder="Product name" id="name" class="col-md-6" />
+
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+
+                <label for="desc" class="col-md-12">Product description</label>
+                <textarea name="Description" placeholder="Product description" id="desc" class="col-md-12 tinyEditor"></textarea>
+
+                <br />
+                <br />
+
+                <label for="type" class="col-md-12">Select product type</label>
+                <select name="TypeID" id="type" class="col-md-4">
+                    <option value="null">TYPE</option>
+                </select>
+
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+
+                <label for="imgUp" class="col-md-12">Upload image</label>
+                <input type="file" name="picUpload" id="imgUp" class="col-md-4" />
+
+                <div class="clearfix" style="margin-bottom: 20px;"></div>
+
+                <input type="submit" value="Create Product" class="col-md-12 btn btn-primary" />
+
+            </div>
+            
+        </form>
+    </article>
+
+</div>

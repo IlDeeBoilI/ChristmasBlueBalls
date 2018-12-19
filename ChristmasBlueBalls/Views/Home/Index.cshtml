@@ -1,0 +1,43 @@
+﻿@using Repo.Models
+@model List<Products>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+<div class="row">
+    <header class="col-md-12">
+        <h2 class="text-center">Welcome to Christmas Blue Balls</h2>
+    </header>
+</div>
+
+
+<div class="row">
+
+    @foreach (Products prod in Model)
+    {
+        <section class="col-md-4 prodBox">
+                <div class="col-md-12">
+                    <a href="/Home/Product/@prod.ID">
+                        @if (prod.Image != null)
+                        {
+                            <img src="~/images/Products/@prod.Image" alt="Product photo" class="img-fluid" />
+                        }
+                        else
+                        {
+                            <img src="~/images/Placeholder/product.jpg" alt="Product photo" class="img-fluid" />
+                        }
+                    </a>
+                </div>
+
+                <div class="col-md-12">
+                    <h4 class="col-md-12">@prod.Name</h4>
+                    <h6 class="col-md-12">@prod.TypeID</h6>
+                    <h6 class="col-md-12">£@prod.Price</h6>
+                    <p class="col-md-12">@Html.Raw(prod.Description.Length > 50 ? prod.Description.Substring(0, 50) + "<a href='/Home/Product/" + @prod.ID + "'>...Read more</a>" : prod.Description)</p>
+                </div>
+        </section>
+    }
+</div>
+

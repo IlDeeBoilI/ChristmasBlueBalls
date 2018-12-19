@@ -1,0 +1,25 @@
+﻿@using Repo.Models
+@model Users
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Areas/CMS/Views/Shared/_CMSLayout.cshtml";
+
+    string userFirstname = ((Users)Session["User"]).Firstname;
+    string userLastname = ((Users)Session["User"]).Lastname;
+    string userName = ((Users)Session["User"]).Username;
+
+}
+
+
+<div class="row">
+
+</div>
+
+
+<div class="row">
+    <h2 class="col-md-12 text-center">
+        Welcome <i>@userFirstname "@userName" @userLastname</i>
+    </h2>
+    <h4 class="col-md-12 text-center">Pick a topic in the menu.</h4>
+</div>
+

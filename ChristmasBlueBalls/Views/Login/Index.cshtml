@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="row">
+
+            <div class="row">
+                <div class="col-md-10 offset-md-2">
+                    <img src="~/images/BlueBalls.png" class="img-fluid" />
+                </div>
+            </div>
+
+            <section class="col-md-8 offset-md-2">
+
+
+
+                <h4 class="col-md-8 offset-md-2 text-center">@ViewBag.Error</h4>
+
+                <form class="col-md-12" action="/Login/Index" method="post">
+                    <input type="text" name="Username" placeholder="Username" class="col-md-6 offset-md-3">
+                    <input type="password" name="Password" placeholder="Password" class="col-md-6 offset-md-3">
+                    <input type="submit" value="Login" class="col-md-6 offset-md-3 btn btn-primary">
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

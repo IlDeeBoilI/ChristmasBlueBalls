@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+    <script src="~/js/app.js"></script>
+</head>
+<body onresize="RightPanelFix()">
+
+    <!--------- LEFT PANEL --------->
+    <div class="cms-leftPanel" id="leftPanel">
+
+        <nav class="cms-nav">
+            <ul class="cms-nav-ul">
+
+                <!--------- MENU ITEM, FRONT PAGE --------->
+                <li class="cms-nav-li">
+                    <a href="/Home/Index" class="cms-nav-a">
+                        <i class="fas fa-laptop nav-icon"></i>
+                        <span class="cms-nav-span">Home</span>
+                    </a>
+                </li>
+
+                <!--------- MENU HEADING, PRODUCTS --------->
+                <li class="cms-nav-title">
+                    <h5>Categories</h5>
+                </li>
+
+                @Html.Action("Types", "Home");
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div id="rightPanel">
+        <main class="container">
+
+            <header class="row">
+                <div class="col-md-8 offset-md-2">
+                    <img src="/images/BlueBalls.png" class="img-fluid" />
+                </div>
+            </header>
+
+            @RenderBody()
+
+            <footer class="row">
+                <h5 class="col-md-12 text-center">
+                    <a href="/Login/Index" class="text-black-50">&copy;</a> 2018, Danny Bendix Christensen
+                </h5>
+            </footer>
+        </main>
+    </div>
+
+        <script src="~/js/app.js"></script>
+</body>
+</html>

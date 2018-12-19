@@ -1,0 +1,23 @@
+﻿@using Repo.Models;
+@model UsersRoles
+@{
+    ViewBag.Title = "GetUser";
+    Layout = "~/Areas/CMS/Views/Shared/_CMSLayout.cshtml";
+}
+
+<div class="row">
+    <article class="col-md-12">
+        <section class="col-md-4">
+            <img src="#" alt="@Model.Username's profilbillede" class="img-fluid"/>
+        </section>
+
+        <section class="col-md-8">
+            <h4 class="col-md-12">@Model.Username</h4>
+
+
+            <h4 class="col-md-6">@Model.Firstname @Model.Lastname</h4>
+            <h4 class="col-md-6"></h4>
+        </section>
+
+    </article>
+</div>

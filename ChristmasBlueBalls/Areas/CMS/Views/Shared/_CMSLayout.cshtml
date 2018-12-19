@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Areas/CMS/css/main.css" rel="stylesheet" />
+
+    <script src="~/Areas/CMS/js/app.js"></script>
+    <script src="~/Areas/CMS/js/tinymce/jquery.tinymce.min.js"></script>
+    <script src="~/Areas/CMS/js/tinymce/tinymce.min.js"></script>
+</head>
+<body onresize="RightPanelFix()">
+
+    <!--------- LEFT PANEL --------->
+    <div class="cms-leftPanel" id="leftPanel">
+
+        <nav class="cms-nav">
+            <ul class="cms-nav-ul">
+
+                <!--------- MENU ITEM, FRONT PAGE --------->
+                <li class="cms-nav-li">
+                    <a href="/CMS/Home/Index" class="cms-nav-a">
+                        <i class="fas fa-laptop nav-icon"></i>
+                        <span class="cms-nav-span">Front Page</span>
+                    </a>
+                </li>
+
+                <!--------- MENU HEADING, PRODUCTS --------->
+                <li class="cms-nav-title">
+                    <h5>Products</h5>
+                </li>
+
+                <!--------- MENU ITEM, CREATE PRODUCT --------->
+                <li class="cms-nav-li">
+                    <a href="/CMS/Product/CreateProduct" class="cms-nav-a">
+                        <i class="far fa-file nav-icon"></i>
+                        <span class="cms-nav-span">Create Product</span>
+                    </a>
+                </li>
+
+                <!--------- MENU ITEM, EDIT PRODUCTS --------->
+                <li class="cms-nav-li">
+                    <a href="#" class="cms-nav-a">
+                        <i class="far fa-edit nav-icon"></i>
+                        <span class="cms-nav-span">Edit Products</span>
+                    </a>
+                </li>
+
+                <!--------- MENU HEADING, USERS --------->
+                <li class="cms-nav-title">
+                    <h5>Users</h5>
+                </li>
+
+                <!--------- MENU ITEM, CREATE USER --------->
+                <li class="cms-nav-li">
+                    <a href="/CMS/Users/AddUser" class="cms-nav-a">
+                        <i class="fas fa-user-plus nav-icon"></i>
+                        <span class="cms-nav-span">Create User</span>
+                    </a>
+                </li>
+
+                <!--------- MENU ITEM, EDIT USERS --------->
+                <li class="cms-nav-li">
+                    <a href="/CMS/Users/GetUsers" class="cms-nav-a">
+                        <i class="fas fa-users nav-icon"></i>
+                        <span class="cms-nav-span">Edit Users</span>
+                    </a>
+                </li>
+
+
+                <li class="cms-nav-li">
+                    <a href="/CMS/Home/Logout" class="cms-nav-a">
+                        <i class="fas fa-users nav-icon"></i>
+                        <span class="cms-nav-span">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="rightPanel">
+        <main class="container">
+            <header class="row">
+                <h1 class="col-md-8 offset-md-2 text-center">@ViewBag.Title</h1>
+            </header>
+
+            @RenderBody()
+
+            <footer class="row">
+                <h5 class="col-md-12 text-center">
+                    &copy; 2018, Danny Bendix Christensen
+                </h5>
+            </footer>
+        </main>
+    </div>
+
+    <script src="~/Areas/CMS/js/app.js"></script>
+    <script src="~/Areas/CMS/js/tinymce/jquery.tinymce.min.js"></script>
+    <script src="~/Areas/CMS/js/tinymce/tinymce.min.js"></script>
+
+    <script>
+        tinymce.init({
+            selector: 'textarea.tinyEditor',  // change this value according to your HTML
+            plugin: 'a_tinymce_plugin',
+            a_plugin_option: true,
+            a_configuration_option: 400
+        });
+    </script>
+</body>
+</html>

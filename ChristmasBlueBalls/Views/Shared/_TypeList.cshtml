@@ -1,0 +1,11 @@
+﻿
+
+@using Repo.Models
+@model List<Types>
+
+
+@foreach(Types i in Model)
+{
+    <li class="cms-nav-li"><a href="#" class="cms-nav-a">@i.Type</a></li>
+}
+

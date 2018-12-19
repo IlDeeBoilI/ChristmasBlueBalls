@@ -1,0 +1,200 @@
+﻿html, body {
+    animation: fadeIn 225ms 1;
+     overflow-x: hidden; 
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(220, 220, 235, 0.95);
+}
+
+/* ----- CMS LEFT PANEL ----- */
+.cms-leftPanel{
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    min-width: 200px;
+    max-width: 12.5%;
+    background-color: rgb(15, 20, 20);
+    box-shadow: rgba(0, 0, 0,0.50) 6px 1px 20px;
+    font-family: 'Roboto',sans-serif;
+}
+
+/* ----- CMS LEFT PANEL UL ----- */
+.cms-nav-ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 15px;
+    user-select: none;
+}
+
+/* ----- CMS LEFT PANEL LIST ITEMS ----- */
+.cms-nav-li{
+    padding: 3px;
+}
+
+/* ----- CMS LEFT PANEL ICONS ----- */
+.nav-icon{
+    margin-right: 8px;
+    margin-left: 4px;
+    width: 30px;
+    text-align: left;
+    user-select: none;
+}
+
+/* ----- CMS LEFT PANEL GROUP TITLES ----- */
+.cms-nav-title{
+    margin-top: 30px;
+    margin-bottom: 4px;
+    padding: 5px;
+    border-top: 1px solid rgba(220, 220, 235, 0.15);
+    color: rgba(220, 220, 235, 1);
+    text-align: center;
+}
+
+/* ----- CMS LEFT PANEL LINKS ----- */
+.cms-nav-a{
+    margin: 0;
+    font-size: 1.05em;
+    color: rgba(220, 220, 235, 0.65);
+    text-align: right;
+    transition: 100ms;
+    user-select: none;
+}
+
+.cms-nav-a:hover{
+    color: rgba(220, 220, 235, 0.95);
+    text-decoration: none;
+    user-select: none;
+}
+
+
+/* ---------- MAIN PAGE CONTENT ---------- */
+
+
+.container{
+    background: rgb(240, 240, 240);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0,0.20) 0px 0px 15px;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+/* .card-top{
+    background-color: rgb(220,220,220);
+    border-radius: 15px 15px 0 0;
+    min-height: 20px;
+    padding: 5px 20px;
+} */
+
+header{
+    border-bottom: 1px solid rgba(220, 220, 235, 0.99);
+}
+
+form{
+    background-color: rgba(220,220,220,0.33);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+header, footer{
+    z-index: 99;
+    /* box-shadow: rgba(34,34,34,0.65) 5px 1px 40px; */
+    padding: 10px;
+    margin-bottom: 60px;
+}
+
+footer{
+    color: rgb(15, 20, 20);
+    background-color: rgba(220, 220, 235, 0.95);
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+
+/* ----- ANIMATIONS ----- */
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0.35;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+    #rightPanel{
+        padding: 0;
+        margin-left: 0;
+    }
+    
+        /* ----- CMS LEFT PANEL ----- */
+    .cms-leftPanel{
+        height: 8%;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        bottom: 0%;
+    }
+
+    /* ----- CMS LEFT PANEL UL ----- */
+    .cms-nav-ul{
+        float: left;
+    }
+
+    /* ----- CMS LEFT PANEL LIST ITEMS ----- */
+    .cms-nav-li{
+        padding-left: 1.75em;
+        font-size: 5vw;
+        float: left;
+    }
+
+    /* ----- CMS LEFT PANEL ICONS ----- */
+    .nav-icon{
+        float: left;
+    }
+
+    /* ----- CMS LEFT PANEL GROUP TITLES ----- */
+    .cms-nav-title{
+        display: none;
+        float: left;
+    }
+
+    /* ----- CMS LEFT PANEL LINKS ----- */
+    .cms-nav-a{
+        float: left;
+    }
+
+    .cms-nav-span{
+        display: none;
+    }
+
+}
+
+@media (max-width: 455px){
+    /* ----- CMS LEFT PANEL LIST ITEMS ----- */
+    .cms-nav-li{
+        font-size: 4.2vw;
+    }
+}
+
+@media (max-width: 410px){
+    /* ----- CMS LEFT PANEL LIST ITEMS ----- */
+    .cms-nav-li{
+        font-size: 5vw;
+        padding-left: 1.25em;
+    }
+}
+
+@media (max-width: 380px){
+    /* ----- CMS LEFT PANEL LIST ITEMS ----- */
+    .cms-nav-li{
+        font-size: 1.2em;
+        padding-left: 1em;
+    }
+}
